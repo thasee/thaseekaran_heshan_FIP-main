@@ -1,0 +1,110 @@
+:root {
+  --content-padding: 5%;
+}
+
+/* About Page Styles */
+.news-teller {
+  padding: 40px var(--content-padding);
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.news-teller-desc {
+  flex-basis: 50%;
+}
+
+.news-teller-desc > h1 {
+  margin-bottom: 30px;
+}
+
+.news-teller-desc > p {
+  max-width: 400px;
+  color: var(--subtle-text-color);
+}
+
+.news-teller-image {
+  width: 100%;
+  height: 300px;
+  max-width: 600px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.contact-heading {
+  text-align: center;
+  color: var(--primary-color);
+  padding: 0 var(--content-padding);
+}
+
+.contact-section {
+  margin-top: 40px;
+  padding: 0 var(--content-padding);
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.contact-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  width: 100%;
+}
+
+.contact-section label {
+  font-weight: bold;
+}
+
+.contact-section input,
+.contact-section textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-section button {
+  padding: 10px 20px;
+  background-color: grey;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+  align-self: flex-start;
+}
+
+.dr-nut-socials {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.dr-nut-socials > h2 {
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+.dr-nut-socials > p {
+  margin-top: 20px;
+  max-width: 500px;
+  color: var(--subtle-text-color);
+}
+
+::placeholder {
+  color: var(--subtle-text-color);
+  font-weight: bold;
+}
+
+.contact-section textarea {
+  height: 180px;
+}
+
+@media (max-width: 500px) {
+  .news-teller,
+  .contact-section {
+    flex-direction: column;
+  }
+}
